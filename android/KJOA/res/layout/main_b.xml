@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  android:background="@color/bar"
+
+    android:orientation="vertical">
+
+<View 
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/frame"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/main_ly_bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/main_img_bt1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/home1"/>"
+
+                <TextView
+                    android:id="@+id/main_txt_bt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_img_bt1"
+                    android:layout_centerHorizontal="true"
+                    android:text="工作台"
+                    android:textColor="@color/active"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/main_ly_bt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/main_img_bt2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/xinxi2"/>
+
+                <TextView
+                    android:id="@+id/main_txt_bt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_img_bt2"
+                    android:layout_centerHorizontal="true"
+                    android:text="私信"
+                    android:textColor="@color/noactive"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        
+        
+        
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+                        <RelativeLayout
+                android:id="@+id/main_ly_bt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/main_img_bt3"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/caiwu2"/>
+
+                <TextView
+                    android:id="@+id/main_txt_bt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_img_bt3"
+                    android:layout_centerHorizontal="true"
+                    android:text="财务"
+                    android:textColor="@color/noactive"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+        
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/main_ly_bt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/main_img_bt4"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerHorizontal="true"
+                   android:src="@drawable/tongxun2"/>
+
+                <TextView
+                    android:id="@+id/main_txt_bt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_img_bt4"
+                    android:layout_centerHorizontal="true"
+                    android:text="通讯录"
+                    android:textColor="@color/noactive"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/main_ly_bt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/main_img_bt5"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerHorizontal="true"
+                   android:src="@drawable/wode2"/>
+
+                <TextView
+                    android:id="@+id/main_txt_bt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_img_bt5"
+                    android:layout_centerHorizontal="true"
+                    android:text="我的"
+                    android:textColor="@color/noactive"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        >
+    </LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="5px"
+    android:orientation="vertical"
+    ></LinearLayout>
+ 
+</LinearLayout>

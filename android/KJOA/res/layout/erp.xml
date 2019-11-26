@@ -1,0 +1,148 @@
+<FrameLayout
+     xmlns:android="http://schemas.android.com/apk/res/android" 
+     xmlns:app="http://schemas.android.com/apk/res-auto" 
+     android:layout_width="match_parent" 
+     android:layout_height="match_parent"> 
+     
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    
+    <LinearLayout
+       android:orientation="vertical"
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/active">
+        
+        <LinearLayout 
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView 
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/head_img"
+                    />
+                
+            </LinearLayout>
+            
+            
+            <LinearLayout 
+    
+                android:layout_weight="4"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                
+                >
+                <TextView 
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户名"
+                    android:textColor="@color/white"
+                    />
+                
+                   <TextView 
+                    
+                         android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号权限"
+                    android:textColor="@color/white"
+                    />
+                
+            </LinearLayout>
+            
+            
+            
+            
+             <LinearLayout 
+                 android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView 
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/scan"
+                    />
+                
+            </LinearLayout>
+            
+             
+              <LinearLayout 
+                  android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView 
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/bell"
+                    />
+                
+            </LinearLayout>
+            
+            
+            
+            
+           
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    
+     <FrameLayout android:id="@+id/frame" 
+         android:layout_width="match_parent" 
+         android:layout_height="0dp" 
+         android:layout_weight="1"
+         android:background="#ffffff" 
+         > 
+         
+         
+         </FrameLayout> 
+         <View android:layout_width="match_parent" 
+             android:layout_height="0dp" 
+             android:alpha="0.8" 
+             
+             android:background="@android:color/darker_gray" /> 
+       
+<include layout="@layout/erp_b"/>
+
+
+   </LinearLayout>
+   
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:src="@drawable/scan_1" />
+
+    </RelativeLayout>
+    
+</FrameLayout>

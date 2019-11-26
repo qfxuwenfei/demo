@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" 
+    
+    >
+
+  <LinearLayout 
+      android:id="@+id/ly_top"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:background="#2ba245"
+      android:orientation="vertical"
+    android:padding="10px"
+      >
+
+      <TextView
+          android:id="@+id/tv_admin"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="管理员：***"
+          android:textColor="#ffffff"
+           />
+      <TextView
+          android:id="@+id/tv_station"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="站点：***"
+          android:textColor="#ffffff"
+           />
+      
+  </LinearLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:padding="10px"
+    >
+    <LinearLayout 
+        android:id="@+id/ly_login"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        
+        <TextView 
+            android:layout_marginTop="10px"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="输入手机号+密码登陆，如忘记密码可通过输入姓名+手机号，获取密码。(每日限制获取5次，请勿频繁获取密码)"
+            />
+        
+        
+         <TextView 
+            android:layout_marginTop="20px"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="姓名（知道密码可不填姓名）："
+            />
+        <EditText
+             android:id="@+id/true_name" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        
+        
+        <TextView 
+            android:layout_marginTop="20px"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="手机号："
+            />
+        <EditText
+             android:id="@+id/user_name" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        
+        <TextView 
+          
+            android:layout_marginTop="20px"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            />
+        <EditText
+              android:id="@+id/user_pwd" 
+            android:inputType="textPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="站点选择：" />
+
+<Spinner 
+    android:id="@+id/site_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+        
+
+<LinearLayout 
+    android:gravity="center_horizontal"
+    android:layout_marginTop="50px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+         <Button 
+            android:id="@+id/get_pwd"
+          
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:text="获取密码"
+            />
+        <Button 
+            android:id="@+id/bt_login"
+        android:layout_marginLeft="50px"
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:text="登  陆"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+    
+    
+    
+</LinearLayout>
+
+
+
+</LinearLayout>

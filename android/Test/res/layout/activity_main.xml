@@ -1,0 +1,58 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ tools:context="com.xutest.MainActivity" 
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:orientation="vertical"
+    >
+
+    <ProgressBar
+        android:id="@+id/pro"
+
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/hello_world" />
+
+    <Button 
+        android:onClick="test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开图片 人脸检测"
+        android:id="@+id/bt"
+        />
+
+        <Button 
+        android:onClick="opencam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图像测试"
+        android:id="@+id/bt1"
+        />
+        
+            <Button 
+        android:onClick="opencam3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照3"
+        android:id="@+id/bt3"
+        />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#ff0000" />
+
+</LinearLayout>
+</ScrollView>

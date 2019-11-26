@@ -1,0 +1,6 @@
+﻿  Mytest.cpp
+d:\my file\c\mytest\mytest\mytest.cpp(1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+d:\my file\c\mytest\mytest\mytest.cpp(2): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  LINK : 没有找到 D:\my file\C\Mytest\Debug\Mytest.exe 或上一个增量链接没有生成它；正在执行完全链接
+  Mytest.vcxproj -> D:\my file\C\Mytest\Debug\Mytest.exe
+  Mytest.vcxproj -> D:\my file\C\Mytest\Debug\Mytest.pdb (Partial PDB)

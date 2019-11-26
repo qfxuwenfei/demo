@@ -1,0 +1,102 @@
+<FrameLayout
+     xmlns:android="http://schemas.android.com/apk/res/android" 
+     xmlns:app="http://schemas.android.com/apk/res-auto" 
+     android:layout_width="match_parent" 
+     android:layout_height="match_parent"
+ 
+     > 
+    <!-- 第一层 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+      
+        >
+    
+    <LinearLayout
+        android:padding="10dp"
+       android:orientation="horizontal"
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/active">
+        
+        <TextView 
+            android:id="@+id/main_tex_company_name"
+            android:layout_marginLeft="5dp"
+             android:textColor="#ffffff"
+            android:layout_weight="4"
+            android:text="公司名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            />
+        
+           <TextView 
+               android:id="@+id/main_txt_user_name"
+               android:textColor="#ffffff"
+               android:textSize="18dp"
+            android:layout_weight="2"
+            android:text="用户名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+           <ImageView 
+               android:layout_weight="1"
+              android:layout_width="32dp"
+              android:layout_height="32dp"
+              android:src="@drawable/mulu"
+               />
+           
+                <ImageView 
+               android:layout_weight="1"
+              android:layout_width="32dp"
+              android:layout_height="32dp"
+              android:src="@drawable/tongzhi"
+               />
+        
+    </LinearLayout>
+    
+    
+    
+    
+    
+    
+     <FrameLayout android:id="@+id/frame" 
+         android:layout_width="match_parent" 
+         android:layout_height="0dp" 
+         android:layout_weight="1"
+             android:background="#eeeeee"
+         > 
+         
+         
+         </FrameLayout> 
+         <View android:layout_width="match_parent" 
+             android:layout_height="0dp" 
+             android:alpha="0.8" 
+             
+             android:background="@android:color/darker_gray" /> 
+       
+<include
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    layout="@layout/main_b" />
+
+   </LinearLayout>
+   
+    <!-- 第二层 -->
+ <FrameLayout 
+    
+     android:id="@+id/main_frame"
+         android:layout_width="match_parent" 
+         android:layout_height="match_parent" 
+         android:layout_weight="1"
+    
+         > 
+         
+         
+         </FrameLayout>       
+
+    
+</FrameLayout>

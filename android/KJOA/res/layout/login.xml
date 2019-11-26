@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/login_bg"
+    >
+<LinearLayout
+    android:gravity="right"
+        android:padding="10dp"
+       android:orientation="horizontal"
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/active">
+    </LinearLayout>
+    
+<FrameLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<RelativeLayout
+    android:id="@+id/login_ly_check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:visibility="visible"
+     >
+
+    <LinearLayout
+      android:padding="15dp"
+        android:gravity="center_vertical"
+      
+        android:id="@+id/login_ly_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:background="@layout/shape_box"
+        android:orientation="horizontal" >
+        <ImageView 
+            
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/login_man"
+            />
+        
+        <TextView 
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:textColor="#efefef"
+            android:textSize="18dp"
+            />
+        
+          <EditText
+          android:background="@null"
+              android:textSize="18dp"
+              android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:id="@+id/login_txt_name"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="请输入手机号码"
+        android:inputType="textPersonName" />
+    </LinearLayout>
+
+        <LinearLayout
+     android:padding="15dp"
+            android:gravity="center_vertical"
+      
+            android:id="@+id/login_ly_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/login_ly_name"
+            android:layout_below="@+id/login_ly_name"
+            android:layout_marginTop="20dp"
+            android:background="@layout/shape_box"
+            android:orientation="horizontal" >
+          
+                <ImageView 
+            
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/login_lock"
+            />
+        
+        <TextView 
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:textColor="#efefef"
+            android:textSize="18dp"
+            />
+        
+              <EditText
+                    android:background="@null"
+                  android:textSize="18dp"
+                   android:layout_weight="1"
+        android:textColor="#000000"
+        android:id="@+id/login_txt_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+          
+          
+              <TextView 
+                 
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:textColor="#efefef"
+            android:textSize="18dp"
+            />
+              
+                  <TextView 
+             
+                      android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码"
+            android:textColor="@color/active"
+          
+            />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/login_ly_xy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/login_ly_pwd"
+            android:layout_below="@+id/login_ly_pwd"
+            >
+
+            <CheckBox
+                android:textSize="12dp"
+                android:checked="true"
+                android:textColor="@color/active"
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我已经同意《康久OA协议》" />
+                  
+        </LinearLayout>
+        
+              <LinearLayout
+                  android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/login_ly_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/login_ly_xy"
+            android:layout_below="@+id/login_ly_xy"
+            >
+
+                  <Button
+                      android:onClick="login"
+                      android:textColor="#ffffff"
+                      android:background="@layout/shape_bt"
+                      android:id="@+id/login_bt_login"
+                      android:layout_width="match_parent"
+                      android:layout_height="48dp"
+                      android:text="登  录" />
+                  
+        </LinearLayout>
+
+              <ImageView
+                  android:onClick="open_set"
+                  android:layout_width="32dp"
+                  android:layout_height="32dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:src="@drawable/set" />
+    
+</RelativeLayout>
+  
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="20dp"
+android:visibility="invisible"
+android:id="@+id/login_ly_set"
+    >
+      <LinearLayout
+      android:padding="15dp"
+        android:gravity="center_vertical"
+      
+        android:id="@+id/login_ly_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:background="@layout/shape_box"
+        android:orientation="horizontal" >
+        <ImageView 
+            
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/zhuzhi"
+            />
+        
+        <TextView 
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:textColor="#efefef"
+            android:textSize="18dp"
+            />
+        
+          <EditText
+          android:background="@null"
+              android:textSize="18dp"
+              android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:id="@+id/login_txt_com"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="请输入系统名称"
+       />
+    </LinearLayout>
+    
+            <LinearLayout
+                  android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/login_ly_save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/login_ly_com"
+            android:layout_below="@+id/login_ly_com"
+            >
+
+                  <Button
+                      android:onClick="close_set"
+          
+                      android:textColor="#ffffff"
+                      android:background="@layout/shape_bt"
+                      android:id="@+id/login_bt_save"
+                      android:layout_width="match_parent"
+                      android:layout_height="48dp"
+                      android:text="保  存" />
+                  
+        </LinearLayout>
+      
+</RelativeLayout>
+
+
+
+</FrameLayout>
+
+
+
+</LinearLayout>
